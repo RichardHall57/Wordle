@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- EditText for user to enter their guess -->
+    <EditText
+        android:id="@+id/guessInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess"
+        android:maxLength="4"
+        android:inputType="text" />
+
+    <!-- Submit Guess Button -->
+    <Button
+        android:id="@+id/submitGuessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Guess" />
+
+    <!-- TextView to show the number of guesses left -->
+    <TextView
+        android:id="@+id/guessesLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guesses left: 3"
+        android:textSize="18sp"
+        android:paddingTop="20dp" />
+
+    <!-- TextView to show the result -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Game Result"
+        android:textSize="18sp" />
+
+    <!-- Reset Game Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start New Game"
+        android:visibility="gone" /> <!-- Hidden initially -->
+</LinearLayout>
